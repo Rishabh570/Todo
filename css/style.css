@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url('../img/wall.jpg');
+  background-attachment: fixed;
+  width: 90%;
+  display: block;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  font-family: 'Yesteryear', cursive;
+  font-size: 4rem;
+}
+
+/*main container--*/
+.application {
+    background: #fff;
+    width: 90%;
+    height: 528px;
+    margin: 50px auto;
+    box-shadow: 0 4px 0px lightblue;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 7px #e3e3e3;
+
+}
+
+ /*head--*/
+.head {
+  padding: 12px 10px 5px;
+  display: inline-block;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: auto;
+  border-bottom: 1.5px solid brown;
+  background-color: #2C9E4B;
+  background-image: url('../img/stardust.png ');
+}
+
+.head-name {
+  display: inline;
+  font-family: 'Yesteryear', cursive;
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 0px;
+
+}
+
+.time {
+  display: inline;
+  float: right;
+  padding: 0px;
+}
+.time h3 {
+  color: white;
+}
+
+.new-todo {
+  float: right;
+  display: inline;
+  margin-right: 9px;
+
+}
+
+.head form {
+  float: right;
+  display: inline;
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  margin-left: 5px;
+  border-radius: 5px;
+  height: 28px;
+  background-color: lightgrey;
+  font-family: cursive;
+  font-size: 15px;
+  border-color: #20615B;
+  box-shadow: -2.5px 1.5px 5px 0 brown;
+}
+
+.addButton {
+  border-radius: 5px;
+  border-color: #20615B;
+  width: 80px;
+  height: 28px;
+  background-color: lightgrey;
+  font-family: cursive;
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: -2.5px 1.5px 5px 0 brown;
+}
+
+.header-input-field {
+  border-radius: 10px;
+}
+
+.header-input {
+  border-radius: 5px;
+  height: 28px;
+  background-color: #A1E3D8;
+}
+.header-input-field:hover {
+  border-radius: 10px;
+  background-color: #f4e8f2;
+}
+
+/*ListToDo--------------------------------*/
+
+.todolist {
+  float: left;
+  width: 25%;
+  height: 390px;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: #B0A565;
+  overflow: auto;
+  background-image: url('../img/naturalwhite.png');
+}
+
+.todocard {
+  box-sizing: border-box;
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+  margin-left: 9px;
+  padding: 5px;
+  background-color: #EDE68A;
+  box-shadow: 5px 4px 5px 0 green;
+  margin-top: 10px;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: auto;
+  background-image: url('../img/lined_paper.png');
+}
+.todocard h2 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.cardprior {
+  display: none;
+}
+.remove-todo {
+  display: none;
+  position: absolute;
+  top: 2px;
+  right: 4px;
+}
+.todocard:hover .remove-todo {
+  display: inline;
+  cursor: pointer;
+}
+
+#recenttodo-heading {
+  display: block;
+  text-align: center;
+  font-family: 'Yesteryear', cursive;
+  font-size: 2rem;
+}
+.sort {
+  display: block;
+  height: 50px;
+  margin: 0 20%;
+  border-radius: 40px;
+  border: .9px dotted black;
+}
+.sort-red {
+  display: inline-block;
+  background-color: red;
+  width: 15%;
+  height: 20px;
+  
+  margin-top: 15px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1.5px outset maroon;
+}
+.sort-yellow {
+  display: inline-block;
+  background-color: yellow;
+  width: 15%;
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1.5px outset maroon;
+}
+.sort-green {
+  display: inline-block;
+  background-color: green;
+  width: 15%;
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1.5px outset maroon;
+}
+
+/*addToDoForm--------------------------------*/
+
+.addForm {
+  display: inline;
+  width: 70%;
+  float: right;
+  margin-right: 10px;
+  box-sizing: border-box;
+
+}
+
+#title-input,
+#description-input,
+select {
+  background-image: url('../img/lined_paper.png');
+}
+
+.formPaper {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: lightgrey;
+  display: none;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: -10px 7px 3px 2px lightgrey;
+
+}
+
+#form-heading {
+  font-weight: 900;
+  font-family: 'Yatra One', cursive;
+  font-size: 2.1rem;
+  margin-top: 4px;
+  font-family: 'Nova Mono', monospace;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.topic-field ,
+.desc-field,
+.choices {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 25px;
+  box-sizing: border-box;
+  font-family: 'Suez One', serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+
+}
+#title-input,
+#description-input {
+  border-radius: 7px;
+}
+#desc-label {
+  display:block;
+}
+
+#form-submit-button {
+  width: 75px;
+  height: 25px;
+  box-sizing: border-box;
+  margin-right: 40px;
+  border-radius: 4px;
+  background-color: #f4e8f2;
+}
+#form-cancel-button {
+  width: 75px;
+  height: 25px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #f4e8f2;
+}
